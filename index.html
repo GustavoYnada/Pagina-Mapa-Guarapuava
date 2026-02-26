@@ -125,11 +125,12 @@
                 }
                 .icon{ height: 37px; width: 37px; overflow: hidden; }
 
-                .info-container{ width: 80%; max-width: 1200px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+                .info-container{ width: 100%; max-width: 1200px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
                 .section-header { width: 100%; padding: 100px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
                 .section-header h2 { font-size: 2.8rem; font-weight: 900; margin-bottom: 20px; letter-spacing: -1px; }
                 .section-header p { font-size: 1.2rem; line-height: 1.6; font-weight: 400; opacity: 0.95; max-width: 850px; width: 80%; }
                 .header-plans{ background-color: #f0f5fa; padding: 100px 0; display: flex; flex-direction: column; align-items: center; }
+                .header-how { width: 80%;}
                 
                 .features-how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 45px; }
                 .feature-how-item {
@@ -140,7 +141,7 @@
                 .feature-how-item h3 { margin-bottom: 15px; color: var(--text-main); }
                 .feature-how-item p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
 
-                #Nosso-contato { max-width: 1200px; width: 80%; text-align: center; background-color: #f0f5fa; margin: 50px auto; padding: 100px; }
+                #Nosso-contato { max-width: 1200px; width: 100%; text-align: center; background-color: #f0f5fa; margin: 50px auto; padding: 100px; }
                 .contact-cards-container { margin-top: 60px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
                 .contact-card {
                     width: 400px; height: 300px; background: #fff; padding: 40px 30px; border-radius: 20px;
@@ -158,7 +159,7 @@
             /* #endregion */
 
             /* #region Footer */
-                .site-footer { padding: 50px 0 30px; background-color: var(--bg-footer); width: 100%; margin-top: auto; border-top: 1px solid var(--border-light); }
+                .site-footer { padding: 50px 0 30px; background-color: var(--bg-footer); width: 100%; margin-top: auto; border-top: 1px solid var(--border-light);border-bottom;: 1px solid var(--border-light) }
                 .footer-container { width: 100%; max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; }
                 .footer-text { flex: 1; max-width: 240px; color: var(--text-main); text-align: center; font-size: 0.95em; line-height: 1.4; }
                 .brand-footer-text {
@@ -192,7 +193,7 @@
                 .legend-container h2 { font-size: 2rem; }
                 .section-header h2 { font-size: 1.6rem;}
                 .section-header p { font-size: 1.1rem;}
-                .feature-how-item { max-width: 500px; width: 100%; }
+                .feature-how-item { max-width: 500px; width: 100%; padding: 30px;}
                 
                 .mobile-map-controls {
                     display: flex; justify-content: center; position: fixed; bottom: 30px; left: 50%;
@@ -219,10 +220,14 @@
                 #conteudo-mapa.mapa-aberto { display: block; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 99999; background: white; }
                 #conteudo-mapa.mapa-aberto #map { width: 100%; height: 100%; margin: 0; }
                 .btn-close-map {
-                    display: flex; align-items: center; gap: 8px; position: absolute; bottom: 30px; left: 50%;
+                    display: flex; align-items: center; gap: 8px; position: absolute; bottom: 60px; left: 50%;
                     transform: translateX(-50%); z-index: 999999; padding: 12px 24px; background-color: var(--primary-color);
                     color: white; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
                 }
+                .grid-legend-boxes{ gap: 20px;}
+                #Nosso-contato { padding: 50px; display: flex; flex-direction: column; align-items: center;}
+                #Nosso-contato .section-header { padding: 40px 0; width: 90%;}
+                .contact-cards-container { margin-top: 0;}
                 .contact-card { max-width: 310px; min-width: 310px; height: 220px; padding: 20px; }
                 .contact-link { font-size: 1rem; }
             }
@@ -235,8 +240,7 @@
 
                 #Nosso-contato { margin: 50px auto; padding: 30px 0; }
                 #Nosso-contato .section-header { padding: 80px 0;}
-                .contact-cards-container { margin-top: 0;}
-                .contact-card { max-width: 228px; min-width: 228px; height: 220px; padding: 20px 10px; }
+                .contact-card { max-width: 250px; min-width: 250px; height: 220px; padding: 20px 10px; }
                 .contact-link { font-size: 0.90rem; margin-bottom: 10px; line-height: 1; }
             }    
             /* #endregion */
